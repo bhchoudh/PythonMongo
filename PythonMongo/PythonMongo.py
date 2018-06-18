@@ -2,9 +2,10 @@ import pydocumentdb
 import pydocumentdb.document_client as document_client
 
 #Cosmosdb SQL API connection 
-uri = 'https://cosmos535.documents.azure.com:443/'
-key = 'tcDAFYgg0CZIBfmKU8WV8Utkr6MZLb8UJoLGgqbSRAdwzKTUuHY9kHx8HjAr2kCsln8u2TfAVI9Ykyn6zACbHw=='
+uri = 'myUri-port'
+key = 'myKey'
 client = document_client.DocumentClient(uri, {'masterKey': key})
+
 
 #database reading
 databases = list(client.ReadDatabases())
